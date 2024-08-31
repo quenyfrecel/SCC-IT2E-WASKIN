@@ -1,10 +1,9 @@
-
-package waskin2E;
+package waskin2e;
 
 public class grades {
     String name;
     int id;
-    double p,m,pf,f;
+    double p,m,pf,f,average;
     
     public void addGrades(int sid,String sname, double sp,double sm, double spf, double sf){
         this.id = sid;
