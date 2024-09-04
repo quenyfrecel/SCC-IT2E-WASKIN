@@ -4,9 +4,13 @@ package waskin2e;
 public class Waskin2E {
 
     public static void main(String[] args) {
-      grade grs = new grade();
+//      grade grs = new grade();
+//      grs.displayGrade();
       
-      grs.displayGrade();
+      Account acs = new Account();
+      acs.getAccounts();
+      
+      
     }
     
 }
