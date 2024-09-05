@@ -12,7 +12,8 @@ public class Waskin2E {
       
         product ngs = new product();
         ngs.getProducts();
-      
+        
+     
       
     }
     
