@@ -7,8 +7,11 @@ public class Waskin2E {
 //      grade grs = new grade();
 //      grs.displayGrade();
       
-      Account acs = new Account();
-      acs.getAccounts();
+ //     Account acs = new Account();
+ //     acs.getAccounts();
+      
+        product ngs = new product();
+        ngs.getProducts();
       
       
     }
