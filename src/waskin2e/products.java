@@ -1,5 +1,5 @@
 
-package waskin2E;
+package waskin2e;
  
 
 public class products {

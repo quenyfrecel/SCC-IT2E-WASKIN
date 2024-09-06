@@ -1,4 +1,3 @@
-
 package waskin2e;
 
 import java.util.Scanner;
