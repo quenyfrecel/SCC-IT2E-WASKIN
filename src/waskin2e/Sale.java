@@ -4,32 +4,51 @@ package waskin2e;
 import java.util.Scanner;
 
 public class Sale {
-    Scanner input = new Scanner(System.in);
-    
-    public void getsales(){
-        System.out.print("Customer Name: ");
-        String customer = input.nextLine();
-        System.out.print("Product Name: ");
-        String product = input.nextLine();
-        System.out.print("Quantity: ");
-        int quantity = input.nextInt();
-        System.out.print("Price: ");
-        float price = input.nextFloat();
-        System.out.print("Cash: ");
-        float cash = input.nextFloat();
         
-        System.out.println("\n-----------------------------------");
-        System.out.println("RECIEPT");
-        System.out.println("-----------------------------------");
+    public void getSale(){
+        Scanner input = new Scanner(System.in);
         
-        System.out.println("Name: " + customer);
-        System.out.println("Product: " + product);
-        System.out.println("Quantity: " + quantity);
-        float total = price * quantity;
-        System.out.println("Total Due: " + total);
-        System.out.println("Chance: " + (cash - total));
+        String cname, pname;
+        int qty;
+        double price, cash, tdue, change;
         
+        System.out.print("Enter Customer Name: ");
+        cname = input.nextLine();
+        
+        System.out.print("Enter Product Name: ");
+        pname = input.nextLine();
+        
+        System.out.print("Enter Quantity: ");
+        qty = input.nextInt();
+        
+        System.out.print("Enter Price: ");
+        price = input.nextInt();
+        
+        System.out.print("Enter Cash: ");
+        cash = input.nextInt();
+        
+        System.out.println("");
+        
+        
+            System.out.println("--------------------------------------------");
+            System.out.println("                   RECEIPT                  ");
+            System.out.println("--------------------------------------------");
+
+            System.out.println("Name: "+cname);
+
+            System.out.println("Item Name: "+pname);
+            System.out.println("Quantity: "+qty);
+
+            System.out.println("--------------------------------------------");
+
+            tdue = price*qty;
+            System.out.println("Total Due: " +tdue);
+            System.out.println("Cash: " +cash);
+
+            System.out.println("--------------------------------------------");
+
+            change= cash - tdue;
+            System.out.println("Change: " +change);
     }
-    
 }
 

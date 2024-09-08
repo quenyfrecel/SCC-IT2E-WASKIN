@@ -22,7 +22,7 @@ public class products {
        this.tep = this.pstocks * this.pprice;
        String status = (this.pstocks > 0)? "Available" : "Out-of-Stocks";
        
-        System.out.printf("%-10d %-10s %-10.2f %-10d %-10d %-10.2f %-10s\n",
+        System.out.printf("%-10d %-10s %-10.2f %-10d %-10d %-10.2f %-10.2f %-10s\n",
                this.pid, this.pname, this.pprice, this.pstocks, this.psold, profit, tep, status);
     }
 }
